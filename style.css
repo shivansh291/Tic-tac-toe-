@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+}
+
+.board {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  font-size: 24px;
+}
+
+.win-line {
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: red;
+  transition: height 1s, width 1s, top 1s, left 1s;
+}
